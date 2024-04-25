@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "9a32948b-fd80-48c4-8cbe-8c2ae83d78af",
+		"name": "CRUD FLASK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22598818"
+	},
+	"item": [
+		{
+			"name": "NEW CONTACT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"fullname\":\"roman riquelme\",\r\n \"email\":\"bocalapasion1@bocajrs.com\",\r\n \"phone\":\"121212121\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/contacts/new",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"contacts",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit CONTACT Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"fullname\":\"boca1212\",\r\n \"email\":\"agustikib@bocajrs.com\",\r\n \"phone\":\"2222222\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/contacts/update/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"contacts",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"fullname\":\"AGUSTIKI 12\",\r\n \"email\":\"agustikibocapasion@bocajrs.com\",\r\n \"phone\":\"12121212\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/contacts/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"contacts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"fullname\":\"AGUSTIKI 12\",\r\n \"email\":\"agustikibocapasion@bocajrs.com\",\r\n \"phone\":\"12121212\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/contacts/delete/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"contacts",
+						"delete",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
